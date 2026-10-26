@@ -17,6 +17,7 @@
             background: linear-gradient(135deg, #f9fafb 0%, #f1f3f5 100%);
             color: #2d3748;
             display: flex;
+            flex-direction: column; /* Organiza o conteúdo e o rodapé verticalmente */
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -32,6 +33,7 @@
             padding: 40px 30px;
             text-align: center;
             border: 1px solid rgba(226, 232, 240, 0.8);
+            margin-bottom: 20px; /* Garante distância para o rodapé */
         }
 
         .brand-container {
@@ -44,7 +46,7 @@
         .brand-logo {
             width: 120px;
             height: 120px;
-            object-fit: contain; /* Garante que a foto NÃO seja distorcida ou esticada */
+            object-fit: contain;
             background-color: transparent;
         }
 
@@ -127,16 +129,20 @@
             width: auto;
         }
 
-        .footer-text {
+        .card-footer-text {
             margin-top: 30px;
             font-size: 12px;
             color: #9ca3af;
             font-weight: 500;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column; /* Força ficar na linha de baixo */
-            align-items: center;    /* Centraliza perfeitamente */
-            gap: 8px;               /* Dá espaço entre as duas linhas */
+        }
+
+        /* Rodapé com links Lado a Lado */
+        .site-footer {
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            font-size: 13px;
+            color: #a0aec0;
         }
 
         .footer-link {
@@ -144,6 +150,7 @@
             text-decoration: none;
             font-weight: 600;
             transition: color 0.2s ease;
+            margin: 0 8px; /* Espaço nas laterais de cada link */
         }
 
         .footer-link:hover {
@@ -182,7 +189,7 @@
             height: 100%;
             background-color: #25d366;
             border-radius: 50%;
-            z-index: -1;
+            z-1: -1;
             opacity: 0.4;
             animation: pulse-effect 2s infinite;
         }
@@ -195,9 +202,9 @@
 </head>
 <body>
 
+    <!-- Bloco Principal do Card -->
     <div class="main-card">
         <div class="brand-container">
-            <!-- Puxando a foto localmente para garantir o carregamento sem erros externos -->
             <img src="logo.png" alt="Central do Motorista" class="brand-logo">
         </div>
         
@@ -230,11 +237,15 @@
             </a>
         </div>
 
-        <div class="footer-text">
-            <p>Atendimento oficial realizado via WhatsApp.</p>
-            <a href="politica-de-privacidade.html" class="footer-link">Política de Privacidade</a>
-        </div>
+        <p class="card-footer-text">Atendimento oficial realizado via WhatsApp.</p>
     </div>
+
+    <!-- Rodapé Corrigido com os Dois Links Alinhados -->
+    <footer class="site-footer">
+        <a href="politica-de-privacidade.html" class="footer-link">Política de Privacidade</a>
+        |
+        <a href="termos-de-uso.html" class="footer-link">Termos de Uso</a>
+    </footer>
 
     <a href="https://wa.me" class="whatsapp-floating" target="_blank" title="Fale Conosco">
         <i class="fab fa-whatsapp"></i>
