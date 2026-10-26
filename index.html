@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central do Motorista — Atendimento</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         * {
             margin: 0;
@@ -133,6 +133,10 @@
             color: #9ca3af;
             font-weight: 500;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column; /* Força ficar na linha de baixo */
+            align-items: center;    /* Centraliza perfeitamente */
+            gap: 8px;               /* Dá espaço entre as duas linhas */
         }
 
         .footer-link {
@@ -140,8 +144,6 @@
             text-decoration: none;
             font-weight: 600;
             transition: color 0.2s ease;
-            display: inline-block;
-            margin-top: 8px;
         }
 
         .footer-link:hover {
@@ -203,41 +205,40 @@
         <p class="subtitle">Suporte Profissional Integrado</p>
 
         <div class="action-list">
-            <a href="https://wa.me/5511960536684?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20meu%20desconto." target="_blank" class="action-btn btn-highlight">
+            <a href="https://wa.me." target="_blank" class="action-btn btn-highlight">
                 <i class="fas fa-percentage"></i>
                 <span class="btn-text">Problema com desconto? Falar com Especialista</span>
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </a>
 
-            <a href="https://wa.me/5511960536684?text=Ol%C3%A1%2C%20gostaria%20da%20segunda%20via." target="_blank" class="action-btn btn-outline">
+            <a href="https://wa.me." target="_blank" class="action-btn btn-outline">
                 <i class="fas fa-file-invoice-dollar"></i>
                 <span class="btn-text">Solicitar Segunda Via</span>
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </a>
 
-            <a href="https://wa.me/5511960536684?text=Ol%C3%A1%2C%20preciso%20de%20acesso%20ao%20portal%20do%20cliente." target="_blank" class="action-btn btn-outline">
+            <a href="https://wa.me." target="_blank" class="action-btn btn-outline">
                 <i class="fas fa-user-shield"></i>
                 <span class="btn-text">Acessar Portal do Cliente</span>
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </a>
 
-            <a href="https://wa.me/5511960536684?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20central%20do%20motorista." target="_blank" class="action-btn btn-outline">
+            <a href="https://wa.me." target="_blank" class="action-btn btn-outline">
                 <i class="fas fa-id-card"></i>
                 <span class="btn-text">Central do Motorista Kovi</span>
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </a>
         </div>
 
-    
-    </div>
-
-    <a href="https://wa.me/5511960536684" class="whatsapp-floating" target="_blank" title="Fale Conosco">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    
-<div class="footer-text">
+        <div class="footer-text">
             <p>Atendimento oficial realizado via WhatsApp.</p>
             <a href="politica-de-privacidade.html" class="footer-link">Política de Privacidade</a>
         </div>
+    </div>
+
+    <a href="https://wa.me" class="whatsapp-floating" target="_blank" title="Fale Conosco">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
 </body>
 </html>
